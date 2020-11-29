@@ -1,0 +1,20 @@
+[
+  {
+    "name": "amazonclone",
+    "discription": "it is a lookalike of amazon shopping site where you can add and remove products which are on this site it",
+    "builtusing": " React-hooks,context api and cloud-firestore",
+    "url": "https://shubham7822.github.io/amazon-clone-in-react/"
+  },
+  {
+    "name": "messangerclone",
+    "discription": "messanger clone is a messanger where people can chat by entering their name",
+    "builtusing": "React-hooks and cloud firestore",
+    "url": "https://shubham7822.github.io/messanger-clone/"
+  },
+  {
+    "name": "Watch-trailers",
+    "discription": "fetching the data from TMDB api and User have to Login with Google to watch any trailer they want to.user can search even when they are not logged in",
+    "builtusing": "React hooks,Redux and cloud firestore",
+    "url": "https://shubham7822.github.io/watch-trailers-react/"
+  }
+]

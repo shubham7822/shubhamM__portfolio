@@ -1,0 +1,23 @@
+#footer {
+  width: 100vw;
+  height: 150px;
+  color: black;
+  background: white;
+  box-shadow: 0px 10px 53px rgba(0, 0, 0, 0.3);
+  font-family: "Dancing Script", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer-love {
+  font-size: 20px;
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  #footer {
+    width: 410px;
+  }
+}

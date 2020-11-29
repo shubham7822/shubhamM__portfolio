@@ -1,0 +1,90 @@
+.banner {
+  display: flex;
+  height: 90vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background: #0c0d17;
+}
+
+.banner-headline {
+  font-size: 110px;
+  color: #fff;
+}
+
+.banner-headline2 {
+  font-size: 30px;
+  color: #fff;
+}
+
+.banner-span {
+  font-size: 100px;
+  color: blue;
+}
+.banner-whoAmI {
+  font-size: 40px;
+  color: blue;
+}
+
+.banner-whoIamblack {
+  font-size: 40px;
+  color: black;
+}
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.Icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+}
+
+a {
+  color: white;
+}
+.mediaIcon {
+  font-size: 70px;
+  cursor: pointer;
+}
+
+.mediaIcon:hover {
+  color: skyblue;
+  transform: scaleY(1.2);
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    width: 410px;
+  }
+  .banner-text {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-headline {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .banner-span {
+    font-size: 60px;
+  }
+
+  .banner-whoIamblack {
+    font-size: 30px;
+  }
+  .banner-whoAmI {
+    font-size: 30px;
+  }
+
+  .mediaIcon {
+    font-size: 50px;
+    margin: 10px 30px;
+  }
+}

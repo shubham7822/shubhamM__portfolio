@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+.about {
+  background: white;
+  color: black;
+  width: 100vw;
+  font-family: "Dancing Script", cursive;
+  z-index: -1;
+}
+
+.about-headline {
+  font-size: 50px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 6px;
+  position: relative;
+}
+
+.about-headline::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background: blue;
+  left: 0;
+  bottom: -1px;
+  transition: all 1s ease;
+}
+
+.about-headline:hover::after {
+  width: 100%;
+}
+.about-container {
+  max-width: 1300px;
+  margin: 40px auto;
+}
+
+.button-element {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.about-my-location {
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  align-items: center;
+}
+
+.my-location-icon {
+  font-size: 30px;
+  color: red;
+}
+
+.location-headline {
+  font-size: 30px;
+}
+.about-btn {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  padding: 30px 20px;
+  position: relative;
+  border-radius: 5px;
+  padding: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.about-btn.btn-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: orange;
+  transition: transform 1s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  overflow: hidden;
+}
+
+.about-btn.btn-slide:hover::before,
+.about-btn.btn-slide:focus::before {
+  transform: scaleX(1);
+}
+
+.about-btn.btn-slide {
+  transition: color 300ms ease-in-out;
+  z-index: 1;
+}
+
+.about-para {
+  color: #000;
+  margin: 20px auto;
+  padding: 0 30px 15px 0px;
+  font-size: 30px;
+}
+.about-inside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillImages {
+  width: 200px;
+  height: 200px;
+  border-radius: 60%;
+  box-shadow: 0 10px 53px rgba(0, 0, 0, 0.3);
+  object-fit: contain;
+}
+
+.about-my-skills {
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+  border-bottom: 2px solid #ccc;
+  width: 40%;
+  margin: 0 auto;
+}
+.about-skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin: 100px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skillImages {
+    height: 130px;
+    width: 130px;
+  }
+  .about-inside {
+    flex-direction: column;
+    width: 320px;
+  }
+  .about-para {
+    font-size: 20px;
+    margin: 20px auto;
+    padding: 0 20px 11px 0px;
+  }
+  .about-headline {
+    font-size: 30px;
+  }
+  .my-location-icon {
+    font-size: 20px;
+  }
+
+  .about-btn {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .location-headline {
+    font-size: 20px;
+  }
+  .about-image {
+    width: 280px;
+    height: 280px;
+  }
+  .about-container {
+    width: 300px;
+  }
+}

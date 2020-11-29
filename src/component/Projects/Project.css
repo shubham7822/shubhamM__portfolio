@@ -1,0 +1,75 @@
+#project {
+  font-family: "Open Sans", sans-serif;
+  background: white;
+  margin: 30px;
+  padding: 30px 10px;
+  height: 440px;
+  width: 500px;
+  position: relative;
+  box-shadow: 0px 10px 53px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+
+.project-headline {
+  padding-bottom: 10px;
+}
+
+.project-headline-border-bottom {
+  width: 70px;
+  height: 2px;
+  margin: 0px auto;
+  border-bottom: 1px solid orange;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.project-discription {
+  padding: 10px 0;
+}
+
+.project-using {
+  margin: 10px 0;
+}
+.project-containter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.live-demo-btn {
+  padding: 10px;
+  margin: 5px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: black;
+  outline: none;
+  transition: all 500ms ease-in-out;
+  border-radius: 6px;
+  border: none;
+  background: rgba(0, 22, 22, 0.3);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.live-demo-btn:hover {
+  transform: scale(1.2);
+  background: orange;
+}
+
+.live-demo-container {
+  position: absolute;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+  #project {
+    width: 350px;
+    height: 420px;
+  }
+}
