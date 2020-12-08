@@ -27,7 +27,7 @@ function Navbar() {
           className='checkbox'
           id='checked'
         />
-        <label className='label' htmlFor='checked'>
+        <label className='label__checkbox' htmlFor='checked'>
           <FaMoon className='moon' />
           <FaSun className='sun' />
           <div className='ball'></div>
