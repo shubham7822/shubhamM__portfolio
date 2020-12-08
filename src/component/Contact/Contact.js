@@ -43,21 +43,27 @@ function Contact() {
         <div className='contact-border'></div>
         <div className='contact-form-section'>
           <form className='contact-form'>
-            <label className='contact-lable'>Name</label>
+            <label is='name' className='contact-lable'>
+              Name
+            </label>
             <input
               type='text'
               value={Name}
               onChange={(e) => setName(e.target.value)}
               className='contact-Input'
             />
-            <lable className='contact-lable'>Email</lable>
+            <lable is='email' className='contact-lable'>
+              Email
+            </lable>
             <input
               type='Email'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className='contact-Input'
             />
-            <lable className='contact-lable'>Subject</lable>
+            <lable is='subject' className='contact-lable'>
+              Subject
+            </lable>
             <textarea
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
@@ -69,10 +75,15 @@ function Contact() {
           <div className='email-section'>
             <h3 className='send-mail'>Send me a mail</h3>
             <ReactFloaterJs>
-              <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=shubhammansute7822@gmail.com">
+              <a
+                target='_blank'
+                href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=shubhammansute7822@gmail.com'
+                rel='noreferrer'
+              >
                 <img
                   className='contact-email'
                   src='https://i.pinimg.com/originals/8f/c3/7b/8fc37b74b608a622588fbaa361485f32.png'
+                  alt='email-contact-img'
                 />
               </a>
             </ReactFloaterJs>

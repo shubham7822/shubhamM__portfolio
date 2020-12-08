@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Banner.css";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -8,6 +8,7 @@ import LightSpeed from "react-reveal/LightSpeed";
 
 const Banner = React.memo(() => {
   const [toggle] = useStateValue();
+
   return (
     <div className='banner' style={{ background: toggle && "white" }}>
       <LightSpeed left cascade>
@@ -28,13 +29,21 @@ const Banner = React.memo(() => {
             wrapper='h2'
           />
           <div className='Icons'>
-            <a target='_blank' href=''>
+            <a
+              target='_blank'
+              rel='noreferrer'
+              href='https://github.com/shubham7822'
+            >
               <FaGithub
                 className='mediaIcon '
                 style={{ color: toggle && "black" }}
               />
             </a>
-            <a target='_blank' href=''>
+            <a
+              target='_blank'
+              rel='noreferrer'
+              href='https://www.linkedin.com/in/shubham-mansute-31761b187/'
+            >
               <FaLinkedinIn
                 className='mediaIcon '
                 style={{ color: toggle && "black" }}

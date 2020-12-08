@@ -70,7 +70,7 @@ li:hover {
   position: absolute;
 }
 
-.checkbox:checked + .lable .ball {
+.checkbox:checked + .label .ball {
   transform: translateX(24px);
 }
 label {

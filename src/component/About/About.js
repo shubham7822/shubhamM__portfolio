@@ -7,20 +7,21 @@ import ReactFloaterJs from "react-floaterjs";
 import Fade from "react-reveal/Fade";
 import Roll from "react-reveal/Roll";
 import { FaSearchLocation } from "react-icons/fa";
+import uuid from "react-uuid";
 
 function About() {
   return (
     <Fade Bottom>
       <div className='about'>
         <div className='about-container'>
-          {about.map((item) => {
+          {about.map((item, index) => {
             return (
               <div className='about-inside'>
                 <div>
                   <h2 className='about-headline'>{item.Name}</h2>
                   <p className='about-para'>{item.info}</p>
                   <div className='button-element'>
-                    <a target='_blank' href={item.link}>
+                    <a target='_blank' rel='noreferrer' href={item.link}>
                       <button className='about-btn btn-slide'>
                         Send a mail
                       </button>
@@ -32,7 +33,7 @@ function About() {
                   </div>
                 </div>
                 <div>
-                  <img className='about-image' src={hello} />
+                  <img className='about-image' alt='about_' src={hello} />
                 </div>
               </div>
             );
@@ -44,7 +45,12 @@ function About() {
               {Skils.map((skill) => {
                 return (
                   <ReactFloaterJs>
-                    <img className='skillImages' src={skill.img} />
+                    <img
+                      className='skillImages'
+                      alt='skill_images'
+                      src={skill.img}
+                      key={uuid()}
+                    />
                   </ReactFloaterJs>
                 );
               })}
