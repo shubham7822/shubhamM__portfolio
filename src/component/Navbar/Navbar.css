@@ -8,16 +8,6 @@
   box-shadow: 0px 10px 53px rgba(0, 0, 0, 0.3);
 }
 
-.home-white {
-  background: white;
-  color: black;
-  width: 100%;
-  top: 0;
-  position: sticky;
-  z-index: 1;
-  box-shadow: 0px 10px 53px rgba(0, 0, 0, 0.3);
-}
-
 .nav li {
   list-style: none;
   padding: 20px 0;
@@ -96,9 +86,6 @@ li:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  .home-white {
-    width: 410px;
-  }
   .home {
     width: 410px;
   }
@@ -107,15 +94,34 @@ li:hover {
     font-size: 12px;
   }
 
-  .link-black {
-    margin: 5px;
-    font-size: 12px;
-  }
   .nav {
     margin: 0 10px;
     justify-content: center;
   }
   #navbar-wrapper {
     justify-content: space-between;
+  }
+}
+@media (min-width: 415px) and (max-width: 800px) {
+  .home {
+    width: 1400px;
+    max-width: 1800px;
+  }
+
+  .link {
+    font-size: 30px;
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1281px) {
+  .home {
+    width: 1300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home {
+    width: 1300px;
   }
 }

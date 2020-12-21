@@ -88,3 +88,38 @@ a {
     margin: 10px 30px;
   }
 }
+
+@media (min-width: 415px) and (max-width: 800px) {
+  .banner {
+    width: 1400px;
+  }
+
+  .banner-span {
+    font-size: 80px;
+  }
+
+  .mediaIcon {
+    font-size: 80px;
+    margin: 15px 70px;
+  }
+
+  .banner-whoIamblack {
+    font-size: 50px;
+  }
+
+  .banner-whoAmI {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner {
+    width: 1300px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1281px) {
+  .banner {
+    width: 1300px;
+  }
+}

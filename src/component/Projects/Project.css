@@ -73,3 +73,9 @@
     height: 420px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #project {
+    width: 1300px;
+  }
+}

@@ -14,9 +14,9 @@ function About() {
     <Fade Bottom>
       <div className='about'>
         <div className='about-container'>
-          {about.map((item, index) => {
+          {about.map((item) => {
             return (
-              <div className='about-inside'>
+              <div key={uuid()} className='about-inside'>
                 <div>
                   <h2 className='about-headline'>{item.Name}</h2>
                   <p className='about-para'>{item.info}</p>

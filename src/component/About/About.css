@@ -165,3 +165,47 @@
     width: 300px;
   }
 }
+
+@media (min-width: 415px) and (max-width: 800px) {
+  .about {
+    width: 1400px;
+  }
+  .button-element {
+    grid-gap: 60px;
+  }
+  .about-btn {
+    padding: 0 60px;
+  }
+  .about-inside {
+    width: 800px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .about-container {
+    width: 900px;
+  }
+  .about-para {
+    font-size: 30px;
+  }
+
+  .about-skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1025) and (max-width: 1250px) {
+  .about {
+    width: 1500px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about {
+    width: 1300px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1281px) {
+  .about {
+    width: 1300px;
+  }
+}
